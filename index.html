@@ -1,55 +1,533 @@
-<!doctype html>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
 
-<!-- this is a comment for human! -->
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Emily Ekdahl</title>
+    <meta name="description" content="Emily's personal website">
+    <meta name="author" content="">
+    <link rel="image_src" href="images/neural_net_2.jpeg" />
 
-<html lang="en">
 
-<header>
-  <!-- change the name to yours! -->
-  <title>Pulipati  Akhil's Portal</title>
-  <!-- link to the master cascading stylesheet -->
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="name" content="Pulipati Akhil's Portal">
-</header>
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-  <!-- add the banner image here -->
- <!-- <p><img class="hero" src="images/banner.jpg" width="75%" alt="banner"></p>-->
-  <div>
-  <img style="float:left" src="akhilphoto.jpg" alt="Akhil" width="17%">
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
 
-  <!-- add the name for the website -->
-  <h1>Pulipati Akhil's Portal</h1>
-  </div>
-  <!-- add a section called "About Me" -->
-  <h2>About Me</h2>
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
 
-  <!-- add a few paragraph lines to describe you -->
-  <p>My name is Akhil and my close friends call me akki.</p> <!-- where do you live? -->
-  <p>I have B.Tech in computer science from the University College of Engineering ,Kakatiya University </p>
-  <p>and M.Tech in Computer Science & Engineering from CMR College Of Engineering & Technology.</p> <!-- Where studying/studied? -->
-  <p>I am currently looking for oppurtunities in fullstack development and Data Analysis roles.</p> <!-- current job or current school year? -->
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 
-  <!-- add a section called "Credentials and Portofolio -->
-  <h2>Credentials and Portfolio</h2>
+</head>
 
-  <!-- add two hyperlinks to resume page and github page separated by a vertical line -->
-  <p><a href="resume (7) (2).pdf">My Resume</a> | <a href="https://github.com/pulipatiakhil" target="_blank">My GitHub</a>|<a href="https://in.linkedin.com/in/pulipati-akhil-0119ab136" target="_blank">My Linkedin</a></p>
-  <h2>Contact</h2>
+<body id="top" class="ss-preload">
 
-  <!-- add a link to let visitor to send you an email easily! -->
-  <p>Email: <a href="mailto:pulipatiakhil213@gmail.com" target="_blank">pulipatiakhil213@gmail.com</a></p>
 
-  <!-- don't post physical address, personal phone number or other personal information on the web! -->
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+
+                    <li><a class="smoothscroll" href="#portfolio">Projects</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    
+                    <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+                    <li><a class="smoothscroll" href="#contact">Say Hi!</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
+        
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>Hi, I'm Emily Ekdahl!</h1>
+
+                    <h3>
+                    I'm a Chicago-based <span>data engineer</span> and <span>data scientist</span> focused on making data intuitive and interactive. <a class="smoothscroll" href="#about">Start scrolling</a>
+                    and learn more <a class="smoothscroll" href="#about">about me</a>.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <li><a href="https://www.linkedin.com/in/emilyekdahl/"><i class="fab fa-linkedin-in" aria-hidden="true" target="_blank"></i></a></li>
+                        <li><a href="https://www.twitter.com/emekdahl"><i class="fab fa-twitter" aria-hidden="true" target="_blank"></i></a></li>
+                        <li><a href="https://www.github.com/emekdahl"><i class="fab fa-github" aria-hidden="true" target="_blank"></i></a></li>
+                        <li><a href="https://emekdahl.medium.com/"><i class="fab fa-medium" aria-hidden="true" target="_blank"></i></a></li>
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </a>
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/profile_image.png" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    I'm a data engineer, data scientist, and grad student at Northwestern University pursuing an MS in Data Science. I like hiking, reading, and exploring the city. While working as a research assistant in college, I discovered that I have a passion for data and research. This eventually led me to the wide world of data science and software engineering. Since then, I've become experienced building models and data pipelines with clean, flexible code. I am looking for a fast-paced, challenging, collaborative, and friendly work environment where I can learn new tools and make a difference.
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
+    
+                        <p>
+                        Emily Ekdahl <br>
+                        <a href="mailto:#0">emily.ekdahl@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="Emily-Ekdahl-Data-Engineer.pdf" class="btn btn--download" download target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+    <section id="portfolio" class="s-portfolio target-section">
+        <div align="center">
+            
+            <h3>Check Out My Articles On Medium</h3>
+            <p>
+               <ul>
+                   <li><a href="https://emekdahl.medium.com/how-to-set-up-your-python-virtual-environment-for-machine-learning-2cfad0b680af">How to Set Up Your Jupyter Notebook and Python Virtual Environment for Machine Learning</a></li>
+                   <li><a href="https://emekdahl.medium.com/how-to-insert-images-in-jupyter-notebook-5abcb3064f0a">How to Insert Images in Jupyter Notebook</a></li>
+                   <li><a href="https://emekdahl.medium.com/five-shortcuts-for-improved-productivity-in-jupyter-notebooks-590826259a7f">Five Shortcuts for Improved Productivity in Jupyter Notebooks</a></li>
+               </ul> 
+            </p> 
+            
+            
+            <h3>Coming Soon... A Few Of My Latest Projects</h3>
+        </div>
+
+        <!-- <div class="resume-block__header">
+            <h4 align="center"> Fare Evasion </h4>
+        </div> 
+        
+        <div class="resume-block">
+            <div align="center" style="padding-right: 15%; padding-left: 15%">
+                 <p>For my undergraduate thesis, I researched changes in fare evasion arrests in New York City's subway system as a result of new enforcement policies from the Manhattan District Attorney. For accessibility, I made an interactive map you can use to explore the data set I created for the paper. Feel free to click around!<a href='https://github.com/nicksawhney/fare_evasion/blob/master/Sawhney_Thesis.pdf' target="_blank"> Read the paper here.</a> </p>
+            </div>
+
+            <div align="center">
+                <iframe src="https://nicksawhney.github.io/fare_evasion/" style="border-style: none;width: 80%; height: 600px; display: block;"></iframe>
+            </div>
+        </div>
+
+        <div class="resume-block__header">
+            <h4 align="center"> NYC Air Pollution </h4>   
+        </div>    
+        <div class="resume-block">
+            <div align="center" style="padding-right: 15%; padding-left: 15%">
+            
+                <p>I noticed that I would cough a lot more during my commute when pollutant levels were high, so I did a brief survey of air quality in the city and its health impacts. This was one of my first projects about the city, and introduced me to the complexities of dealing with different types of map projections and geographic data. It's also a great example of how easy it is to turn around a project from NYC Open Data. <a href='https://nicksawhney.github.io/NYCAirMaps/' target="_blank"> Check out the jupyter notebook </a> </p>
+                <img src="images/air-map-head.jpeg" style="border-style: none;width: 80%; height: 80%; display: block;">
+            </div> 
+        </div> -->
+    </section>
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Data Engineer - Fetch Rewards</h4>
+                        <p class="resume-block__header-meta">
+                            <span></span> 
+                            <span class="resume-block__header-date">
+                                2020 - present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                       <ul>
+                           <li>Architecting streaming data pipelines from operational data stores to Snowflake data warehouses</li>
+                           <li>Championing software engineering best practices including linting, testing, documentation, monitoring & observability</li>
+                           <li>Mentoring teammates and providing guidance via technical design reviews and pull requests</li>
+                       </ul> 
+                    </p>    
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Data Engineer - Otus</h4>
+                        <p class="resume-block__header-meta">
+                            <span></span> 
+                            <span class="resume-block__header-date">
+                                2017 - 2020
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                       <ul>
+                           <li>Delivering actionable insights to K-12 teachers and administrators via complex data analytics applications</li>
+                           <li>Engineering bespoke and library-based distributed data pipelines in Java and Python</li>
+                           <li>Writing API endpoints to consume data in Scala</li>
+                           <li>Optimizing data models for access patterns in Redshift, mySQL, and ElasticSearch</li>
+                           <li>Documenting and testing data models and APIs with unit, integration, and E2E tests</li>
+                           <li>Leveraging Kubernetes, Codefresh, and DockerHub to deploy and scale the analytics
+                            applications</li>
+                       </ul> 
+                    </p>    
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Northwestern University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>M.S. Data Science</span> 
+                            <span class="resume-block__header-date">
+                                c.o. 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                    I am currently pursuing the <em> Machine Learning </em> track of the Data Science masters program at Northwestern University.
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>SQL</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent90"></div>
+                            <strong>Data Modeling / DBT</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent80"></div>
+                        <strong>Amazon Web Services</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent65"></div>
+                            <strong>TypeScript</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent65"></div>
+                            <strong>Python</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent45"></div>
+                            <strong>Java</strong>
+                        </li>
+                        <li>
+                            <div class="progress percent75"></div>
+                            <strong>Kubernetes</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <!-- <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/neural_net_2.jpeg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Fare Evasion</h5>
+                    <p>I researched changes in fare evasion arrests in New York City's subway system as a result of new enforcement policies from the Manhattan District Attorney. For accessibility, I made an interactive map you can use to explore the data set I created for the project. <a href='https://github.com/nicksawhney/fare_evasion/blob/master/Sawhney_Thesis.pdf' target="_blank"> Read the paper here.</a> </p>
+                </div>
+    
+                <a href="https://nicksawhney.github.io/fare_evasion/" class="modal-popup__details">Project link</a>
+            </div>
+        </div>  -->
+        <!-- end modal -->
+
+        <!-- <hr>
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/air-map-head.jpeg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Air Quality</h5>
+                    <p>I noticed that I would cough a lot more during my commute when pollutant levels were high, so I did a brief survey of air quality in the city and its health impacts. This was one of my first projects with Pandas, Folium, and introduced me to the complexities of dealing with different types of map projections and geographic data.</p>
+                </div>
+    
+                <a href="https://nicksawhney.github.io/NYCAirMaps" class="modal-popup__details">Project link</a>
+            </div>
+        </div>  -->
+        <!-- end modal -->
+
+    </section> <!-- end s-portfolio -->
+
+
+       <!-- testimonials
+    ================================================== -->
+    <!--
+    <section id="testimonials" class="s-testimonials target-section">
+
+        <div class="s-testimonials__bg"></div>
+
+        <div class="row s-testimonials__header">
+            <div class="column large-12">
+                <h3>Hear What My Clients Says</h3>
+            </div>
+        </div>
+
+        <div class="row s-testimonials__content">
+
+            <div class="column">
+
+                <div class="swiper-container testimonial-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-02.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Tim Cook</strong>
+                                    <span>CEO, Apple</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
+                            Explicabo a quaerat sint autem dolore ducimus ut consequatur neque.  Nisi dolores quaerat fuga rem nihil nostrum.
+                            Laudantium quia consequatur molestias delectus culpa.
+                            </p>
+                        </div> --> <!-- end testimonial-slider__slide -->
+                        <!--
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-03.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Sundar Pichai</strong>
+                                    <span>CEO, Google</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                            Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
+                            Quasi voluptas eius distinctio. Atque eos maxime.
+                            </p>
+                        </div> --> <!-- end testimonial-slider__slide -->
+                        
+                        <!--
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-04.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Satya Nadella</strong>
+                                    <span>CEO, Microsoft</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                            Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
+                            Voluptatem dignissimos ut.
+                            </p>
+                        </div> --> <!-- end testimonial-slider__slide -->
+                        <!-- 
+                        <div class="testimonial-slider__slide swiper-slide">
+                            <div class="testimonial-slider__author">
+                                <img src="images/avatars/user-05.jpg" alt="Author image" class="testimonial-slider__avatar">
+                                <cite class="testimonial-slider__cite">
+                                    <strong>Jeff Bezos</strong>
+                                    <span>CEO, Amazon</span>
+                                </cite>
+                            </div>
+                            <p>
+                            Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
+                            quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
+                            Nihil ea quia nesciunt. Ducimus aut sed ipsam.
+                            </p>
+                        </div> --> <!-- end testimonial-slider__slide -->
+    <!--
+                    </div> 
+                    <div class="swiper-pagination"></div>
+
+                </div> 
+
+            </div> 
+
+        </div> 
+
+    </section> 
+ -->
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                I'd love to talk about anything data-related! Feel free to reach out!
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" href="mailto:emily.ekdahl@gmail.com">emily.ekdahl@gmail.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                </div>
+
+                <div class="column large-12">
+                    <a href="mailto:emily.ekdahl@gmail.com" class="mailtoui btn btn--primary h-full-width">Reach Out</a>
+                </div>
+            </div> <!-- end contact-infos -->
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a href="https://www.linkedin.com/in/emilyekdahl/"><i class="fab fa-linkedin-in" aria-hidden="true" target="_blank"></i></a></li>
+                    <li><a href="https://www.twitter.com/emekdahl"><i class="fab fa-twitter" aria-hidden="true" target="_blank"></i></a></li>
+                    <li><a href="https://www.github.com/emekdahl"><i class="fab fa-github" aria-hidden="true" target="_blank"></i></a></li>
+                    <li><a href="https://emekdahl.medium.com/"><i class="fab fa-medium" aria-hidden="true" target="_blank"></i></a></li>
+                </ul>
+
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Copyright Ceevee 2021</span> 
+                <span>This page is adapted from a design by <a href="https://www.styleshout.com/">StyleShout</a></span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+
+
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
-
-<footer>
-  <hr>
-  <!-- change the name to yours! -->
-  <code>Copyright (C) 2020 Pulipati Akhil</code>
-</footer>
 
 </html>
